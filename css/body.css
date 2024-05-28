@@ -117,3 +117,10 @@
 		font-size: 15px;
 	}
 }
+
+@media screen and (max-width: 600px){
+  .formacao a{
+  	width: 25%;
+  	margin-left: 38%;
+  }
+}
