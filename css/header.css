@@ -1,0 +1,19 @@
+.cabecalho{
+	background-color: #13af9a;
+	height: 25vh;
+}
+
+.apresentacao{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.apresentacao img{
+	width: 80px;
+	height: 80px;
+	border-radius: 80%;
+}
