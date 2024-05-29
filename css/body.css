@@ -1,51 +1,32 @@
-.titulo{
-	text-align: center;
-	display: block;
-	width: 100vw;
-}
-
 .main{
-	background-color: #13af9a;
-	height: 500vh;
+	margin: 0 auto;
+	width: 100%;
+	display: grid;
+	grid-template-areas: "a b"
+	"c b";
+	grid-template-columns: 360px 1fr;
+	grid-template-rows: 320px 1fr;
 }
 
 .formacao{
-	display: flex;
-	flex-direction: column;
-	margin-top: 5px;
-	text-align: center;
+	background-color: #333;
+	color: #fff;
+	grid-area: a;
+	padding: 20px;
 }
 
 .experienciasProfissionais{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 4rem;
-}
-
-.descricao{
-	width: 35%;
-	height: 48vh;
+	background-color: #13af9a;
+	color: #fff;
+	grid-area: b;
 	padding: 20px;
-	background-color: white;
-	margin-top: 10px;
 }
 
 .habilidades{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	margin-top: 10px;
-}
-
-.listaHabilidades{
-	width: 65%;
-	height: 30vh;
-	border-radius: 10px;
-	background-color: white;
+	background-color: #13af9a;
+	color: #fff;
+	grid-area: c;
+	padding: 20px;
 }
 
 .modal{
@@ -106,16 +87,9 @@
 }
 
 .descricao h1{
-	font-size: 15px;
-	font-weight: bold;
 	text-align: center;
 }
 
-.descricao p{
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-}
 
 .formacao h2{
 	font-size: 15px;
@@ -131,37 +105,10 @@
 	cursor: pointer;
 	background-color: green;
 	color: white;
-	margin-left: 43%;
+	margin: 40%;
 }
 
 .formacao p{
 	font-size: 15px;
 	font-weight: bold;
-}
-
-@media screen and (max-width: 768px){
-	.main{
-		height: 900vh;
-	}
-
-	.experienciasProfissionais{
-		display: flex;
-		flex-direction: row;
-	}
-
-	.descricao{
-		width: 40%;
-		height: 40vh;
-	}
-
-	.descricao h1{
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 600px){
-  .formacao a{
-  	width: 25%;
-  	margin-left: 38%;
-  }
 }

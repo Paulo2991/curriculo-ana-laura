@@ -33,7 +33,12 @@
 	border-radius: 80%;
 }
 
+
 @media screen and (max-width: 600px){
+	.cabecalho{
+		width: 127.5%;
+	}
+
 	.apresentacao{
 		display: flex;
 		flex-direction: column;
@@ -61,5 +66,17 @@
 		margin-left: 39%;
 		width: 20%;
 		height: 20%;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.cabecalho{
+		width: 144.5%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.cabecalho{
+		width: 169.5%;
 	}
 }
