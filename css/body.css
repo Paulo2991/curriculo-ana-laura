@@ -6,8 +6,6 @@
 	"c b";
 	grid-template-columns: 360px 1fr;
 	grid-template-rows: 320px 1fr;
-	position: absolute;
-	right: 28%;
 }
 
 .formacao{
@@ -15,6 +13,7 @@
 	color: #fff;
 	grid-area: a;
 	padding: 20px;
+	text-align: center;
 }
 
 .experienciasProfissionais{
@@ -155,27 +154,35 @@
 	font-weight: bold;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 960px) {
 	.main {
-		width: 73%;
-		margin: 0;
+		margin: 0px;
+		width: 100%;
+	}
+
+	@media (max-width: 720px) {
+		.main {
+			grid-template-columns: 1fr;
+			grid-template-areas: "a"
+			"c"
+			"b";
+		}
 	}
 }
 
-@media screen and (max-width: 960px) {
-	.main {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: "a"
-		"c"
-		"b";
-		width: 80%;
-		left: 0.05%;
+@media screen and (max-width: 600px){
+	.formacao{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 	}
-}
+	.formacao img{
+		width: 35vw;
+		height: 35vh;
+	}
 
-@media screen and (max-width: 600px) {
-	.main {
-		width: 50%;
+	.formacao h1,h2,p{
+		text-align: center;
 	}
 }
