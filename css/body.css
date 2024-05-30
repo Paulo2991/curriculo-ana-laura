@@ -1,4 +1,4 @@
-.main{
+.profissional{
 	margin: 50px auto;
 	width: 960px;
 	display: grid;
@@ -62,14 +62,24 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
+	justify-content: space-around;
+	padding: 2px;
+}
 
+.linha{
+	/*tira todo prenchimento do elemento*/
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-width: 0px;
+    /*add um preenchimento so no topo do elemento, shorthand*/
+    border-top: 2px solid black;
 }
 
 .atividades{
 	padding: 20px;
-	border-radius: 2em;
 	width: 45vw;
 	height: 69vh;
 	background-color: white;
@@ -77,6 +87,11 @@
 
 .atividades h1{
 	text-align: center;
+}
+
+.experienciasProfissionais h1{
+	text-align: center;
+	font-weight: bold;
 }
 
 .atividades ul{
