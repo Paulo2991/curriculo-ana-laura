@@ -1,82 +1,68 @@
 .cabecalho{
-	background-color: #13af9a;
-	height: 25vh;
+	background-color: #BD5D38;
+	text-align: center;
+	position: fixed;
+	padding: 8px 16px 8px 16px;
+	width: 20%;
+	height: 100%;
+	left: 80%;
 }
 
 .apresentacao{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 10px;
 }
 
 .contato{
-	width: 15%;
+	width: 30%;
 	height: 15%;
 	border-radius: 2px;
 	padding: 5px;
 	cursor: pointer;
 	background-color: green;
 	color: white;
-	margin-left: 43%;
+	margin-top: 3%;
 }
 
 .apresentacao h1{
 	color: white;
+	text-align: center;
 }
 
-.apresentacao img{
-	width: 80px;
-	height: 80px;
-	border-radius: 80%;
+.apresentacao a{
+	width: 31%;
+	height: 15%;
+	border-radius: 2px;
+	padding: 5px;
+	cursor: pointer;
+	background-color: green;
+	color: white;
+	text-align: center;
 }
-
 
 @media screen and (max-width: 600px){
+
 	.cabecalho{
-		width: 127.5%;
-	}
-
-	.apresentacao{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.apresentacao h1{
-		font-size: 12px;
-	}
-
-	.apresentacao img{
-		width: 80px;
-		height: 80px;
-		-moz-transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		transition: all 0.5s;
-	}
-
-	.apresentacao img:hover{
-		-moz-transform: scale(1.8);
-		-webkit-transform: scale(1.8);
-		transform: scale(1.8);
+		width: 55%;
+		left: 50%;
 	}
 
 	.contato{
-		margin-left: 39%;
 		width: 20%;
 		height: 20%;
 	}
 }
 
-@media screen and (max-width: 375px){
-	.cabecalho{
-		width: 144.5%;
+@media (max-width: 1024px) {
+	.contato{
+		width: 80%;
 	}
-}
 
-@media screen and (max-width: 320px){
-	.cabecalho{
-		width: 169.5%;
+	.apresentacao a{
+		width: 80%;
 	}
 }

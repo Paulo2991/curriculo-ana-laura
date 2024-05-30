@@ -11,3 +11,8 @@
 html{
 	font-size: 42,5%;
 }
+
+body{
+	font-family: 'Merriweather', serif;
+	background-color: #f5f5dc;
+}

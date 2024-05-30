@@ -1,11 +1,13 @@
 .main{
-	margin: 0 auto;
-	width: 100%;
+	margin: 50px auto;
+	width: 960px;
 	display: grid;
 	grid-template-areas: "a b"
 	"c b";
 	grid-template-columns: 360px 1fr;
 	grid-template-rows: 320px 1fr;
+	position: absolute;
+	right: 28%;
 }
 
 .formacao{
@@ -16,10 +18,17 @@
 }
 
 .experienciasProfissionais{
-	background-color: #13af9a;
-	color: #fff;
+	background-color: white;
+	color: black;
 	grid-area: b;
 	padding: 20px;
+}
+
+.descricao{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .habilidades{
@@ -50,6 +59,38 @@
 	border-radius: 5px;
 }
 
+.curriculares{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+
+}
+
+.atividades{
+	padding: 20px;
+	border-radius: 2em;
+	width: 45vw;
+	height: 69vh;
+	background-color: white;
+}
+
+.atividades h1{
+	text-align: center;
+}
+
+.atividades ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.atividades li{
+	text-align: center;
+}
+
 .close {
 	color: #54595e;
 	float: right;
@@ -64,6 +105,11 @@
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.formacao img{
+	width: 20vw;
+	height: 30vh;
 }
 
 .modalContent p{
@@ -87,28 +133,49 @@
 }
 
 .descricao h1{
+	margin-top: 5%;
+	text-align: center;
+	font-family: 'Lora', serif;
+}
+
+.descricao p{
+	margin-top: 1%;
 	text-align: center;
 }
 
 
 .formacao h2{
 	font-size: 15px;
-	font-family: "Arial",sans-serif;
+	font-family: 'Lora', serif;	
 	font-weight: bold;
-}
-
-.formacao a{
-	width: 15%;
-	height: 15%;
-	border-radius: 2px;
-	padding: 5px;
-	cursor: pointer;
-	background-color: green;
-	color: white;
-	margin: 40%;
 }
 
 .formacao p{
 	font-size: 15px;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+	.main {
+		width: 73%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.main {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "a"
+		"c"
+		"b";
+		width: 80%;
+		left: 0.05%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main {
+		width: 50%;
+	}
 }
