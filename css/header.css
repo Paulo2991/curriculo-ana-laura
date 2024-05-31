@@ -38,17 +38,23 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
 	.apresentacao{
 		display: flex;
 		flex-direction: column;
 	}
 
 	.apresentacao a{
-		width: 17%;
+		width: 24%;
 	}
 
 	.contato{
-		width: 17%;
+		width: 20%;
+	}
+}
+
+@media (max-width: 320px){
+	.cabecalho{
+		width: 110%;
 	}
 }

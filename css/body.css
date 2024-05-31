@@ -1,5 +1,5 @@
 .profissional{
-	margin: 50px auto;
+	margin: auto;
 	width: 960px;
 	display: grid;
 	grid-template-areas: "a b"
@@ -68,20 +68,20 @@
 
 .linha{
 	/*tira todo prenchimento do elemento*/
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-style: solid;
-    border-width: 0px;
-    /*add um preenchimento so no topo do elemento, shorthand*/
-    border-top: 2px solid black;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-style: solid;
+	border-width: 0px;
+	/*add um preenchimento so no topo do elemento, shorthand*/
+	border-top: 2px solid black;
 }
 
 .atividades{
 	padding: 20px;
-	width: 45vw;
-	height: 69vh;
+	width: 70vw;
+	height: 45vh;
 	background-color: white;
 }
 
@@ -169,21 +169,34 @@
 	font-weight: bold;
 }
 
-@media (max-width: 960px) {
-	.main {
+@media screen and (max-width: 1024px){
+	.atividades{
+		width: 94vw;
+		height: 80vh;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.profissional {
 		margin: 0px;
 		width: 100%;
 	}
 
-	@media (max-width: 720px) {
-		.main {
-			grid-template-columns: 1fr;
-			grid-template-areas: "a"
-			"c"
-			"b";
-		}
+	.atividades{
+		width: 100vw;
+		height: 80vh;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.profissional {
+		grid-template-columns: 1fr;
+		grid-template-areas: "a"
+		"c"
+		"b";
+	}
+}
+
 
 @media screen and (max-width: 600px){
 	.formacao{
@@ -199,5 +212,27 @@
 
 	.formacao h1,h2,p{
 		text-align: center;
+	}
+
+	.atividades{
+		width: 9000vw;
+		height: 110vh;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.atividades{
+		height: 130vh;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.profissional {
+		margin: 0px;
+		width: 110%;
+	}
+
+	.atividades{
+		height: 135vh;
 	}
 }
