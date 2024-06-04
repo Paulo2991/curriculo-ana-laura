@@ -188,6 +188,13 @@
 	}
 }
 
+@media screen and (max-width: 768px){
+	.formacao img{
+		width: 19vw;
+		height: 19vh;
+	}
+}
+
 @media screen and (max-width: 720px) {
 	.profissional {
 		grid-template-columns: 1fr;
@@ -215,7 +222,6 @@
 	}
 
 	.atividades{
-		width: 9000vw;
 		height: 110vh;
 	}
 }
