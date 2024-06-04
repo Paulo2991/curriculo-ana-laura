@@ -188,13 +188,6 @@
 	}
 }
 
-@media screen and (max-width: 428px){
-	.formacao img{
-		width: 19vw;
-		height: 19vh;
-	}
-}
-
 @media screen and (max-width: 720px) {
 	.profissional {
 		grid-template-columns: 1fr;
@@ -210,7 +203,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	.formacao img{
 		width: 35vw;
@@ -218,6 +211,7 @@
 	}
 
 	.formacao h1,h2,p{
+		font-size: 12px;
 		text-align: center;
 	}
 
